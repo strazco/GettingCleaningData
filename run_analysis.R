@@ -104,3 +104,5 @@ write.table(combo_ds,"merged_ds.txt")
 calc_ds <- combo_ds[, lapply(.SD, mean), by=c("SubjectID","ActID")]
 write.table(calc_ds,"calculated_ds.txt")
 
+View(calc_ds)
+
